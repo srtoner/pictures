@@ -202,7 +202,7 @@ reduced = reduced.pivot(index = ['State', 'CID', 'Year', 'HHI'], columns = ['Rac
 # d1 = p1.reset_index()
 
 reduced.columns = reduced.columns.droplevel()
-# reduced = reduced.reset_index()
+reduced = reduced.reset_index()
 # reduced
 reduced.to_csv('NCES_Data_Final.csv', index = False)
 
